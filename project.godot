@@ -57,6 +57,15 @@ choose_P2={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="player_1"
+2d_physics/layer_2="player_2"
+2d_physics/layer_3="word"
+2d_physics/layer_4="platform"
+2d_physics/layer_5="box"
+2d_physics/layer_6="bomb"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
