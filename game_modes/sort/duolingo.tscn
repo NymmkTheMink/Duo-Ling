@@ -1,5 +1,18 @@
-[gd_scene format=3 uid="uid://cmd16ifg5kokd"]
+[gd_scene load_steps=4 format=3 uid="uid://cmd16ifg5kokd"]
+
+[ext_resource type="Texture2D" uid="uid://bqj1vwibsmhp4" path="res://icon.svg" id="1_jiktr"]
+[ext_resource type="Script" path="res://game_modes/sort/duolingo.gd" id="1_rxxxp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtbt2"]
+size = Vector2(128, 128)
 
 [node name="Duolingo" type="CharacterBody2D"]
-collision_layer = 2
-collision_mask = 28
+collision_mask = 29
+script = ExtResource("1_rxxxp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 1, 1)
+texture = ExtResource("1_jiktr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wtbt2")
