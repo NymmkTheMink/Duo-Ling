@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://bqr1krasgtb2d"]
+[gd_scene load_steps=3 format=3 uid="uid://bqr1krasgtb2d"]
+
+[ext_resource type="PackedScene" uid="uid://cmd16ifg5kokd" path="res://game_modes/sort/duolingo.tscn" id="1_4fftf"]
+[ext_resource type="PackedScene" uid="uid://r10q0ni37i4j" path="res://game_modes/sort/ling_ling.tscn" id="2_6hvsk"]
 
 [node name="Sort" type="Node2D"]
+
+[node name="Duolingo" parent="." instance=ExtResource("1_4fftf")]
+position = Vector2(0, 448)
+
+[node name="LingLing" parent="." instance=ExtResource("2_6hvsk")]
+position = Vector2(0, 448)
