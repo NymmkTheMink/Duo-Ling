@@ -9,4 +9,4 @@
 position = Vector2(0, 448)
 
 [node name="LingLing" parent="." instance=ExtResource("2_6hvsk")]
-position = Vector2(0, 448)
+position = Vector2(1920, 448)
