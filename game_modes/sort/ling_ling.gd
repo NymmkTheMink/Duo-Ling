@@ -20,9 +20,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		position.x = pos_3
 	
-	if Input.is_action_just_pressed("left"):
+	if Input.is_action_just_pressed("left_P1"):
 		if current_pos != 1:
 			current_pos -= 1
-	elif Input.is_action_just_pressed("right"):
+	elif Input.is_action_just_pressed("right_P1"):
 		if current_pos != 3:
 			current_pos += 1
