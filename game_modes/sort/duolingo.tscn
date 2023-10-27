@@ -1,3 +1,5 @@
 [gd_scene format=3 uid="uid://cmd16ifg5kokd"]
 
 [node name="Duolingo" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 28
