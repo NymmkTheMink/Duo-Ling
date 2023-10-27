@@ -13,7 +13,7 @@ border_color = Color(1, 1, 1, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lp0cg"]
 size = Vector2(128, 64)
 
-[node name="FrenchWord" type="StaticBody2D"]
+[node name="FrenchWord" type="RigidBody2D"]
 script = ExtResource("1_w1leq")
 
 [node name="Label" type="Label" parent="."]
