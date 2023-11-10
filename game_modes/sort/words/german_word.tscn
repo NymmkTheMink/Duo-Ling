@@ -16,6 +16,7 @@ size = Vector2(128, 64)
 [node name="GermanWord" type="RigidBody2D"]
 freeze = true
 script = ExtResource("1_j5n2i")
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="."]
 offset_left = -64.0

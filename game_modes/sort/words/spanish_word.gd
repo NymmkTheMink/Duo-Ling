@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 
-var words: Array = [“Hola”, “Adios”, “Lo siento”, “Dónde”, “Grande”, “Pequeña”, “Veinticinco”, “Catorce”, “Cuarenta”, “Doce”, “Chica”, “Chico”, “Hombre”, “Mujer”, “Mark la zanahoria”, “Que viva España”]
+var words: Array = ["Hola", "Adios", "Lo siento", "D\u00f3nde", "Grande", "Peque\u00f1a", "Veinticinco", "Catorce", "Cuarenta", "Doce", "Chica", "Chico", "Hombre", "Mujer", "Mark la zanahoria", "Que viva Espa\u00f1a"]
 
 
 func _ready() -> void:
