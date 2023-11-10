@@ -41,4 +41,7 @@ func _physics_process(delta: float) -> void:
 		get_word.position = Vector2(0, -100)
 		$Words.add_child(get_word)
 	
+	# drop word
+	if Input.is_action_just_pressed("choose_P1") and $Words.get_child_count() != 0:
+		$Words.get_child(0).freeze = false
 	
