@@ -5,13 +5,10 @@ var pos_1: float = 240.0
 var pos_2: float = 480.0
 var pos_3: float = 720.0
 
-@onready var spanish_word = preload("res://game_modes/sort/words/spanish_word.tscn")
-@onready var french_word = preload("res://game_modes/sort/words/french_word.tscn")
-@onready var german_word = preload("res://game_modes/sort/words/german_word.tscn")
-
 var words: Array = [preload("res://game_modes/sort/words/spanish_word.tscn"),
 	preload("res://game_modes/sort/words/french_word.tscn"), 
 	preload("res://game_modes/sort/words/german_word.tscn"), ]
+
 
 func _ready() -> void:
 	# Sets the players starting position to the middle. 
@@ -41,7 +38,7 @@ func _physics_process(delta: float) -> void:
 		var random_word = words[randi() % words.size()]
 		var get_word = random_word.instantiate()
 		randomize()
-		get_word.position = Vector2(randi() % 360, randi() % 1)
+		get_word.position = Vector2(0, -100)
 		$Words.add_child(get_word)
 	
 	
