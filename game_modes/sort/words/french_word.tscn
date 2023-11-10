@@ -16,6 +16,7 @@ size = Vector2(128, 64)
 [node name="FrenchWord" type="RigidBody2D"]
 collision_layer = 4
 collision_mask = 16
+gravity_scale = 2.0
 freeze = true
 script = ExtResource("1_w1leq")
 

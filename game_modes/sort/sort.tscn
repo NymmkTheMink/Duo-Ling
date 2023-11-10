@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bqr1krasgtb2d"]
+[gd_scene load_steps=8 format=3 uid="uid://bqr1krasgtb2d"]
 
 [ext_resource type="PackedScene" uid="uid://cmd16ifg5kokd" path="res://game_modes/sort/duolingo.tscn" id="1_4fftf"]
+[ext_resource type="Script" path="res://game_modes/sort/sort.gd" id="1_byirx"]
 [ext_resource type="PackedScene" uid="uid://r10q0ni37i4j" path="res://game_modes/sort/ling_ling.tscn" id="2_6hvsk"]
 [ext_resource type="Texture2D" uid="uid://bqj1vwibsmhp4" path="res://icon.svg" id="3_u26ge"]
 
@@ -14,6 +15,7 @@ size = Vector2(192, 192)
 size = Vector2(192, 192)
 
 [node name="Sort" type="Node2D"]
+script = ExtResource("1_byirx")
 
 [node name="Duolingo" parent="." instance=ExtResource("1_4fftf")]
 position = Vector2(0, 448)
@@ -134,3 +136,10 @@ offset_left = 16.0
 offset_right = 1904.0
 offset_bottom = 16.0
 color = Color(0, 0, 0, 1)
+
+[connection signal="body_entered" from="SpanishBoxP1" to="." method="_on_spanish_box_p_1_body_entered"]
+[connection signal="body_entered" from="FrenchBoxP1" to="." method="_on_french_box_p_1_body_entered"]
+[connection signal="body_entered" from="GermanBoxP1" to="." method="_on_german_box_p_1_body_entered"]
+[connection signal="body_entered" from="GermanBoxP2" to="." method="_on_german_box_p_2_body_entered"]
+[connection signal="body_entered" from="FrenchBoxP2" to="." method="_on_french_box_p_2_body_entered"]
+[connection signal="body_entered" from="SpanishBoxP2" to="." method="_on_spanish_box_p_2_body_entered"]
