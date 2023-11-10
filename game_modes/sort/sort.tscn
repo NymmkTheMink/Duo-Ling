@@ -164,9 +164,9 @@ offset_bottom = 128.0
 text = "1"
 
 [node name="TimerPanel" type="Panel" parent="."]
-offset_left = 736.0
+offset_left = 768.0
 offset_top = 64.0
-offset_right = 1120.0
+offset_right = 1152.0
 offset_bottom = 192.0
 metadata/_edit_group_ = true
 
