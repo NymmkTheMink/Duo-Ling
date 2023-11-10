@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://bqr1krasgtb2d"]
+[gd_scene load_steps=7 format=3 uid="uid://bqr1krasgtb2d"]
 
 [ext_resource type="PackedScene" uid="uid://cmd16ifg5kokd" path="res://game_modes/sort/duolingo.tscn" id="1_4fftf"]
 [ext_resource type="PackedScene" uid="uid://r10q0ni37i4j" path="res://game_modes/sort/ling_ling.tscn" id="2_6hvsk"]
+[ext_resource type="Texture2D" uid="uid://bqj1vwibsmhp4" path="res://icon.svg" id="3_u26ge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fn5i2"]
+size = Vector2(192, 192)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fosx7"]
+size = Vector2(192, 192)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g21d1"]
+size = Vector2(192, 192)
 
 [node name="Sort" type="Node2D"]
 
@@ -10,3 +20,87 @@ position = Vector2(0, 448)
 
 [node name="LingLing" parent="." instance=ExtResource("2_6hvsk")]
 position = Vector2(1920, 448)
+
+[node name="SpanishBoxP1" type="Area2D" parent="."]
+position = Vector2(240, 832)
+collision_layer = 16
+collision_mask = 4
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="SpanishBoxP1"]
+modulate = Color(1, 0, 0, 1)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_u26ge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpanishBoxP1"]
+shape = SubResource("RectangleShape2D_fn5i2")
+
+[node name="FrenchBoxP1" type="Area2D" parent="."]
+position = Vector2(480, 832)
+collision_layer = 16
+collision_mask = 4
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="FrenchBoxP1"]
+modulate = Color(0, 0, 1, 1)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_u26ge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrenchBoxP1"]
+shape = SubResource("RectangleShape2D_fosx7")
+
+[node name="GermanBoxP1" type="Area2D" parent="."]
+position = Vector2(720, 832)
+collision_layer = 16
+collision_mask = 4
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="GermanBoxP1"]
+modulate = Color(1, 1, 0, 1)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_u26ge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GermanBoxP1"]
+shape = SubResource("RectangleShape2D_g21d1")
+
+[node name="GermanBoxP2" type="Area2D" parent="."]
+position = Vector2(1200, 832)
+collision_layer = 16
+collision_mask = 4
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="GermanBoxP2"]
+modulate = Color(1, 1, 0, 1)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_u26ge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GermanBoxP2"]
+shape = SubResource("RectangleShape2D_g21d1")
+
+[node name="FrenchBoxP2" type="Area2D" parent="."]
+position = Vector2(1440, 832)
+collision_layer = 16
+collision_mask = 4
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="FrenchBoxP2"]
+modulate = Color(0, 0, 1, 1)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_u26ge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrenchBoxP2"]
+shape = SubResource("RectangleShape2D_fosx7")
+
+[node name="SpanishBoxP2" type="Area2D" parent="."]
+position = Vector2(1680, 832)
+collision_layer = 16
+collision_mask = 4
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="SpanishBoxP2"]
+modulate = Color(1, 0, 0, 1)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_u26ge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpanishBoxP2"]
+shape = SubResource("RectangleShape2D_fn5i2")
