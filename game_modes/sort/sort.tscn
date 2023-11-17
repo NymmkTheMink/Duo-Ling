@@ -19,6 +19,7 @@ script = ExtResource("1_byirx")
 
 [node name="Duolingo" parent="." instance=ExtResource("1_4fftf")]
 position = Vector2(0, 448)
+disable_mode = 0
 
 [node name="LingLing" parent="." instance=ExtResource("2_6hvsk")]
 position = Vector2(1920, 448)

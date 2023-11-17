@@ -45,3 +45,7 @@ func _physics_process(delta: float) -> void:
 	# drop word
 	if Input.is_action_just_pressed("choose_P2") and $Words.get_child_count() != 0:
 		$Words.get_child(0).freeze = false
+
+
+func _on_penalty_timer_timeout() -> void:
+	process_mode = Node.PROCESS_MODE_INHERIT

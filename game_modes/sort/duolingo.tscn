@@ -7,6 +7,7 @@
 size = Vector2(128, 128)
 
 [node name="Duolingo" type="CharacterBody2D"]
+disable_mode = 1
 collision_mask = 29
 script = ExtResource("1_rxxxp")
 
@@ -18,3 +19,10 @@ texture = ExtResource("1_jiktr")
 shape = SubResource("RectangleShape2D_wtbt2")
 
 [node name="Words" type="Node2D" parent="."]
+
+[node name="PenaltyTimer" type="Timer" parent="."]
+process_mode = 3
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="PenaltyTimer" to="." method="_on_penalty_timer_timeout"]
