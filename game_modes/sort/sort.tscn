@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bqr1krasgtb2d"]
+[gd_scene load_steps=9 format=3 uid="uid://bqr1krasgtb2d"]
 
 [ext_resource type="PackedScene" uid="uid://cmd16ifg5kokd" path="res://game_modes/sort/duolingo.tscn" id="1_4fftf"]
 [ext_resource type="Script" path="res://game_modes/sort/sort.gd" id="1_byirx"]
 [ext_resource type="PackedScene" uid="uid://r10q0ni37i4j" path="res://game_modes/sort/ling_ling.tscn" id="2_6hvsk"]
 [ext_resource type="Texture2D" uid="uid://bqj1vwibsmhp4" path="res://icon.svg" id="3_u26ge"]
+[ext_resource type="FontFile" uid="uid://3hbjwqbveslb" path="res://assets/Tourney/Tourney-VariableFont_wdth,wght.ttf" id="5_2w6xe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fn5i2"]
 size = Vector2(192, 192)
@@ -139,44 +140,116 @@ offset_bottom = 16.0
 color = Color(0, 0, 0, 1)
 
 [node name="PointsP1" type="Panel" parent="."]
-offset_left = 288.0
-offset_top = 64.0
-offset_right = 672.0
-offset_bottom = 192.0
+offset_left = 340.0
+offset_top = 72.0
+offset_right = 580.0
+offset_bottom = 168.0
+metadata/_edit_group_ = true
+
+[node name="Text" type="Label" parent="PointsP1"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 20.0
+offset_right = 85.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "P1"
+
+[node name="Equal" type="Label" parent="PointsP1"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 16.0
+offset_right = 132.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "="
 
 [node name="Label" type="Label" parent="PointsP1"]
 layout_mode = 0
 offset_left = 160.0
-offset_right = 224.0
-offset_bottom = 128.0
-text = "1"
+offset_top = 20.0
+offset_right = 210.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "10"
 
 [node name="PointsP2" type="Panel" parent="."]
-offset_left = 1248.0
-offset_top = 64.0
-offset_right = 1632.0
-offset_bottom = 192.0
+offset_left = 1332.0
+offset_top = 72.0
+offset_right = 1572.0
+offset_bottom = 168.0
+metadata/_edit_group_ = true
+
+[node name="Text" type="Label" parent="PointsP2"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 20.0
+offset_right = 85.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "P2"
+
+[node name="Equal" type="Label" parent="PointsP2"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 16.0
+offset_right = 132.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "="
 
 [node name="Label" type="Label" parent="PointsP2"]
 layout_mode = 0
 offset_left = 160.0
-offset_right = 224.0
-offset_bottom = 128.0
-text = "1"
+offset_top = 20.0
+offset_right = 210.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "10"
 
 [node name="TimerPanel" type="Panel" parent="."]
 offset_left = 768.0
 offset_top = 64.0
 offset_right = 1152.0
 offset_bottom = 192.0
-metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="TimerPanel"]
 layout_mode = 0
-offset_left = 160.0
-offset_right = 224.0
-offset_bottom = 128.0
-text = "1"
+offset_left = 240.0
+offset_top = 8.0
+offset_right = 352.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 96
+text = "60
+"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 60.0
