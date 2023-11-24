@@ -38,7 +38,6 @@ func _physics_process(delta: float) -> void:
 		var random_word = words[randi() % words.size()]
 		var get_word = random_word.instantiate()
 		randomize()
-		get_word.position = Vector2(0, -100)
 		$Words.add_child(get_word)
 	
 	# drop word

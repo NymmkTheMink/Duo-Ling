@@ -19,11 +19,11 @@ size = Vector2(192, 192)
 script = ExtResource("1_byirx")
 
 [node name="Duolingo" parent="." instance=ExtResource("1_4fftf")]
-position = Vector2(0, 448)
+position = Vector2(480, 448)
 disable_mode = 0
 
 [node name="LingLing" parent="." instance=ExtResource("2_6hvsk")]
-position = Vector2(1920, 448)
+position = Vector2(1440, 448)
 
 [node name="SpanishBoxP1" type="Area2D" parent="."]
 position = Vector2(240, 832)
@@ -256,6 +256,139 @@ wait_time = 60.0
 one_shot = true
 autostart = true
 
+[node name="EndPanel" type="Panel" parent="."]
+process_mode = 3
+offset_left = 576.0
+offset_top = 236.0
+offset_right = 1344.0
+offset_bottom = 720.0
+
+[node name="win" type="Label" parent="EndPanel"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 16.0
+offset_right = 578.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 64
+text = "Wins!"
+
+[node name="p1" type="Label" parent="EndPanel"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 116.0
+offset_right = 256.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "P1 got "
+
+[node name="p2" type="Label" parent="EndPanel"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 216.0
+offset_right = 259.0
+offset_bottom = 273.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "P2 got "
+
+[node name="ReplayButton" type="Button" parent="EndPanel"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 360.0
+offset_right = 304.0
+offset_bottom = 422.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "Replay"
+
+[node name="BackButton" type="Button" parent="EndPanel"]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 364.0
+offset_right = 677.0
+offset_bottom = 426.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "Back"
+
+[node name="P1Points" type="Label" parent="EndPanel"]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 116.0
+offset_right = 650.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "10"
+
+[node name="P2Points" type="Label" parent="EndPanel"]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 216.0
+offset_right = 650.0
+offset_bottom = 273.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 48
+text = "10"
+
+[node name="winner" type="Label" parent="EndPanel"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 16.0
+offset_right = 371.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 64
+text = "P2"
+
+[node name="Tie" type="Label" parent="EndPanel"]
+visible = false
+layout_mode = 0
+offset_left = 320.0
+offset_top = 16.0
+offset_right = 440.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 64
+text = "Tie!"
+
 [connection signal="body_entered" from="SpanishBoxP1" to="." method="_on_spanish_box_p_1_body_entered"]
 [connection signal="body_entered" from="FrenchBoxP1" to="." method="_on_french_box_p_1_body_entered"]
 [connection signal="body_entered" from="GermanBoxP1" to="." method="_on_german_box_p_1_body_entered"]
@@ -263,3 +396,4 @@ autostart = true
 [connection signal="body_entered" from="FrenchBoxP2" to="." method="_on_french_box_p_2_body_entered"]
 [connection signal="body_entered" from="SpanishBoxP2" to="." method="_on_spanish_box_p_2_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="EndPanel/ReplayButton" to="." method="_on_replay_button_pressed"]
