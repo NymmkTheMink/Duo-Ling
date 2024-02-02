@@ -6,3 +6,7 @@ var words: Array = ["Bonjour", "Au revoir", "D\u00E9sol\u00E9e", "O\u00F9", "Gra
 
 func _ready() -> void:
 	$Label.text = words[randi() % words.size()]
+
+
+func _process(delta: float) -> void:
+	position.x = (128 - $Label.size.x )/2
