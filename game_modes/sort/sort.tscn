@@ -258,6 +258,7 @@ autostart = true
 
 [node name="EndPanel" type="Panel" parent="."]
 process_mode = 3
+visible = false
 offset_left = 576.0
 offset_top = 236.0
 offset_right = 1344.0
