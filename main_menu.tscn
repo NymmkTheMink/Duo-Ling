@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0xujtgddc00l"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_5y6as"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5y6as")
+
+[node name="SortModeButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 716.0
+offset_top = 472.0
+offset_right = 756.0
+offset_bottom = 503.0
+text = "Sort
+"
+
+[node name="CatchModeButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 716.0
+offset_top = 392.0
+offset_right = 768.0
+offset_bottom = 446.0
+text = "Catch
+
+"
+
+[node name="SettingsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 716.0
+offset_top = 528.0
+offset_right = 786.0
+offset_bottom = 582.0
+text = "Settings
+
+"
+
+[connection signal="pressed" from="SortModeButton" to="." method="_on_sort_mode_button_pressed"]
+[connection signal="pressed" from="CatchModeButton" to="." method="_on_catch_mode_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
