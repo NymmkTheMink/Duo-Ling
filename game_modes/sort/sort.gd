@@ -6,8 +6,7 @@ var player_2_points: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$EndPanel.visible = false
-	get_tree().paused = false
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -84,19 +83,4 @@ func _on_spanish_box_p_2_body_entered(body: Node2D) -> void:
 
 
 func _on_timer_timeout() -> void:
-	get_tree().paused = true
-	$EndPanel.visible = true
-	$EndPanel/P1Points.text = str(player_1_points)
-	$EndPanel/P2Points.text = str(player_2_points)
-	if player_1_points > player_2_points:
-		$EndPanel/winner.text = "P1"
-	if player_1_points == player_2_points:
-		$EndPanel/Tie.visible = true
-		$EndPanel/win.visible = false
-		$EndPanel/winner.visible = false
-	else:
-		$EndPanel/winner.text = "P2"
-
-
-func _on_replay_button_pressed() -> void:
 	get_tree().reload_current_scene()
