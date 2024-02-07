@@ -390,6 +390,12 @@ theme_override_fonts/font = ExtResource("5_2w6xe")
 theme_override_font_sizes/font_size = 64
 text = "Tie!"
 
+[node name="StartPanel" type="Panel" parent="."]
+offset_left = 576.0
+offset_top = 236.0
+offset_right = 1344.0
+offset_bottom = 720.0
+
 [connection signal="body_entered" from="SpanishBoxP1" to="." method="_on_spanish_box_p_1_body_entered"]
 [connection signal="body_entered" from="FrenchBoxP1" to="." method="_on_french_box_p_1_body_entered"]
 [connection signal="body_entered" from="GermanBoxP1" to="." method="_on_german_box_p_1_body_entered"]
