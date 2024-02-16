@@ -305,10 +305,10 @@ text = "P2 got "
 
 [node name="ReplayButton" type="Button" parent="EndPanel"]
 layout_mode = 0
-offset_left = 124.0
-offset_top = 360.0
-offset_right = 304.0
-offset_bottom = 422.0
+offset_left = 488.0
+offset_top = 368.0
+offset_right = 668.0
+offset_bottom = 430.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
@@ -322,10 +322,10 @@ text = "Replay"
 
 [node name="BackButton" type="Button" parent="EndPanel"]
 layout_mode = 0
-offset_left = 552.0
-offset_top = 364.0
-offset_right = 677.0
-offset_bottom = 426.0
+offset_left = 132.0
+offset_top = 368.0
+offset_right = 257.0
+offset_bottom = 430.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
@@ -400,10 +400,10 @@ offset_bottom = 720.0
 [node name="Play" type="Button" parent="StartPanel"]
 process_mode = 3
 layout_mode = 0
-offset_left = 252.0
-offset_top = 340.0
-offset_right = 520.0
-offset_bottom = 428.0
+offset_left = 468.0
+offset_top = 364.0
+offset_right = 692.0
+offset_bottom = 440.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
@@ -412,6 +412,22 @@ theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_2w6xe")
 theme_override_font_sizes/font_size = 40
 text = "start"
+
+[node name="Back" type="Button" parent="StartPanel"]
+process_mode = 3
+layout_mode = 0
+offset_left = 72.0
+offset_top = 360.0
+offset_right = 296.0
+offset_bottom = 436.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 40
+text = "back"
 
 [node name="Label" type="Label" parent="StartPanel"]
 layout_mode = 0
@@ -443,3 +459,4 @@ text = "500"
 [connection signal="pressed" from="EndPanel/ReplayButton" to="." method="_on_replay_button_pressed"]
 [connection signal="pressed" from="EndPanel/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="StartPanel/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="StartPanel/Back" to="." method="_on_back_button_pressed"]

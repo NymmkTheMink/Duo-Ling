@@ -94,6 +94,21 @@ func _on_timer_timeout() -> void:
 		Global.high_score = player_1_points
 	if player_2_points > Global.high_score:
 		Global.high_score = player_2_points
+	
+	if player_1_points > player_2_points:
+		$EndPanel/win.visible = true
+		$EndPanel/winner.text = "P1"
+		$EndPanel/winner.visible = true
+		$EndPanel/Tie.visible = false
+	if player_2_points > player_1_points:
+		$EndPanel/win.visible = true
+		$EndPanel/winner.text = "P2"
+		$EndPanel/winner.visible = true
+		$EndPanel/Tie.visible = false
+	if player_2_points == player_1_points:
+		$EndPanel/win.visible = false
+		$EndPanel/winner.visible = false
+		$EndPanel/Tie.visible = true
 
 
 func _on_play_pressed() -> void:
@@ -109,3 +124,4 @@ func _on_replay_button_pressed() -> void:
 func _on_back_button_pressed() -> void:
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://main_menu.tscn")
+
