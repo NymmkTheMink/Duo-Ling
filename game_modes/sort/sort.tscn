@@ -391,10 +391,47 @@ theme_override_font_sizes/font_size = 64
 text = "Tie!"
 
 [node name="StartPanel" type="Panel" parent="."]
+process_mode = 3
 offset_left = 576.0
 offset_top = 236.0
 offset_right = 1344.0
 offset_bottom = 720.0
+
+[node name="Play" type="Button" parent="StartPanel"]
+process_mode = 3
+layout_mode = 0
+offset_left = 252.0
+offset_top = 340.0
+offset_right = 520.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 40
+text = "start"
+
+[node name="Label" type="Label" parent="StartPanel"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 164.0
+offset_right = 305.0
+offset_bottom = 235.0
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 64
+text = "Record"
+
+[node name="Label2" type="Label" parent="StartPanel"]
+layout_mode = 0
+offset_left = 596.0
+offset_top = 164.0
+offset_right = 703.0
+offset_bottom = 235.0
+theme_override_fonts/font = ExtResource("5_2w6xe")
+theme_override_font_sizes/font_size = 64
+text = "500"
 
 [connection signal="body_entered" from="SpanishBoxP1" to="." method="_on_spanish_box_p_1_body_entered"]
 [connection signal="body_entered" from="FrenchBoxP1" to="." method="_on_french_box_p_1_body_entered"]
@@ -404,3 +441,5 @@ offset_bottom = 720.0
 [connection signal="body_entered" from="SpanishBoxP2" to="." method="_on_spanish_box_p_2_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="EndPanel/ReplayButton" to="." method="_on_replay_button_pressed"]
+[connection signal="pressed" from="EndPanel/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="StartPanel/Play" to="." method="_on_play_pressed"]
