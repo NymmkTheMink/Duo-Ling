@@ -12,6 +12,7 @@ border_color = Color(1, 1, 1, 1)
 size = Vector2(128, 64)
 
 [node name="FrenchWords" type="RigidBody2D"]
+mass = 0.1
 
 [node name="Label" type="Label" parent="."]
 offset_left = -64.0

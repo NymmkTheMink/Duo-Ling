@@ -1,8 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://du8k8m3n64qbo"]
+[gd_scene load_steps=13 format=3 uid="uid://du8k8m3n64qbo"]
 
 [ext_resource type="PackedScene" uid="uid://d2shw7s47uwlp" path="res://game_modes/catch/ling_ling.tscn" id="1_h5fd2"]
 [ext_resource type="Script" path="res://game_modes/catch/catch.gd" id="1_osmho"]
 [ext_resource type="PackedScene" uid="uid://bty54xx8gr1io" path="res://game_modes/catch/duolingo.tscn" id="2_7drgi"]
+[ext_resource type="Texture2D" uid="uid://bqj1vwibsmhp4" path="res://icon.svg" id="4_3viyx"]
+[ext_resource type="PackedScene" uid="uid://fch0ccb1x255" path="res://game_modes/catch/words/FrenchWords.tscn" id="5_37opf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wsvdm"]
+size = Vector2(200, 86.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xsdsf"]
+size = Vector2(200, 85)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bv82j"]
 size = Vector2(1911, 32)
@@ -25,8 +33,34 @@ script = ExtResource("1_osmho")
 [node name="LingLing" parent="." instance=ExtResource("1_h5fd2")]
 position = Vector2(104, 480)
 
+[node name="languagebox ling" type="Area2D" parent="LingLing"]
+position = Vector2(1416, 360)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LingLing/languagebox ling"]
+position = Vector2(-16, 48)
+shape = SubResource("RectangleShape2D_wsvdm")
+
+[node name="Sprite2D" type="Sprite2D" parent="LingLing/languagebox ling"]
+position = Vector2(-16, 48)
+scale = Vector2(1.625, 0.75)
+texture = ExtResource("4_3viyx")
+
 [node name="Duolingo" parent="." instance=ExtResource("2_7drgi")]
 position = Vector2(-64, 240)
+
+[node name="languagebox duo" type="Area2D" parent="Duolingo"]
+position = Vector2(400, 168)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Duolingo/languagebox duo"]
+position = Vector2(24, 480)
+shape = SubResource("RectangleShape2D_xsdsf")
+
+[node name="Sprite2D" type="Sprite2D" parent="Duolingo/languagebox duo"]
+position = Vector2(24, 480)
+scale = Vector2(1.625, 0.75)
+texture = ExtResource("4_3viyx")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 952.0
@@ -88,3 +122,6 @@ color = Color(0, 0, 0, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect5/StaticBody2D"]
 position = Vector2(944, 544.5)
 shape = SubResource("RectangleShape2D_k7sb3")
+
+[node name="FrenchWords" parent="." instance=ExtResource("5_37opf")]
+position = Vector2(176, 80)
