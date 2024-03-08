@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bigrdvyk3eucr"]
 
 [ext_resource type="Script" path="res://game_modes/sort/words/spanish_word.gd" id="1_55q1x"]
-[ext_resource type="FontFile" uid="uid://3hbjwqbveslb" path="res://assets/Tourney/Tourney-VariableFont_wdth,wght.ttf" id="2_x6pe8"]
+[ext_resource type="FontFile" uid="uid://bw2to88g567a2" path="res://assets/Madimi_One/MadimiOne-Regular.ttf" id="2_4ayai"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uujjg"]
 bg_color = Color(0.403922, 0, 0.588235, 1)
@@ -31,8 +31,8 @@ offset_bottom = 32.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_x6pe8")
-theme_override_font_sizes/font_size = 16
+theme_override_fonts/font = ExtResource("2_4ayai")
+theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_uujjg")
 text = "word"
 horizontal_alignment = 1
