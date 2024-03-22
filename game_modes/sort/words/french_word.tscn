@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjf45egc0c2uf"]
 
 [ext_resource type="Script" path="res://game_modes/sort/words/FrenchWord.gd" id="1_w1leq"]
-[ext_resource type="FontFile" uid="uid://3hbjwqbveslb" path="res://assets/Tourney/Tourney-VariableFont_wdth,wght.ttf" id="2_ihe86"]
+[ext_resource type="FontFile" uid="uid://bw2to88g567a2" path="res://assets/Madimi_One/MadimiOne-Regular.ttf" id="2_kgpsi"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6max4"]
 bg_color = Color(0.403922, 0, 0.588235, 1)
@@ -32,8 +32,8 @@ size_flags_horizontal = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_ihe86")
-theme_override_font_sizes/font_size = 16
+theme_override_fonts/font = ExtResource("2_kgpsi")
+theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_6max4")
 text = "word"
 horizontal_alignment = 1
