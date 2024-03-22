@@ -83,6 +83,7 @@ choose_P2_up={
 2d_physics/layer_4="platform"
 2d_physics/layer_5="box"
 2d_physics/layer_6="bomb"
+2d_physics/layer_7="vanisher"
 
 [rendering]
 
